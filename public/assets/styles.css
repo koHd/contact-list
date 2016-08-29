@@ -1,0 +1,72 @@
+div#container {
+  width: 100%
+  margin: 0 auto;
+}
+
+#main-menu {
+  width: 100%;
+  height: 80px;
+  clear: both;
+}
+
+#logo {
+  float: left;
+  padding: 10px;
+}
+
+.menu-item {
+  float: right;
+  padding: 10px;
+}
+
+.context-menu-item {
+  padding: 20px;
+  margin: 20px;
+}
+
+.contact-details {
+  padding: 10px;
+  margin: 10px;
+}
+
+.notice-box {
+  width: 500;
+  padding:25;
+  margin: 25;
+}
+
+.contact-detail {
+  height: 40px;
+  padding: 2px;
+  margin: 2px;
+}
+
+.small-icon {
+  margin: 4px;
+  width: 30px;
+  height: 30px;
+}
+
+.small-contact {
+  cursor: pointer;
+  float: left;
+  width: 300px;
+  height: 150px;
+  margin: 25px;
+}
+
+.large-contact {
+  cursor: pointer;
+  float: left;
+  width: 100%;
+  margin: 25px;
+  clear: both;
+}
+
+img {
+  float: left;
+}
+
+ul {
+  list-style-type: none;
+}

@@ -1,0 +1,38 @@
+<html>
+  <% include /partials/head.ejs %>
+  <body>
+    <div id="container">
+      <% include /partials/main-menu.ejs %>
+      <hr>
+      <ul id=contacts-list>
+
+        <% contacts.forEach(function(contact) { %>
+        <a href="/contacts/<%= contact._id %>">
+          <li class="small-contact" id=<%= contact._id %>>
+
+            <ul>
+
+              <li id="name" class="contact-detail">
+                <img src="/assets/icons/star_fav_empty.png" alt="name" class="small-icon"></img>
+                <p><%- contact.name["first"] %> <%- contact.name["last"] %></p>
+              </li>
+
+              <li id="email" class="contact-detail">
+                <img src="/assets/icons/mail.png" alt="email address" class="small-icon"></img>
+                <p><%= contact.email %></p>
+              </li>
+
+              <li id="phone" class="contact-detail">
+                <img src="/assets/icons/phone.png" alt="phone number" class="small-icon"></img>
+                <p><%= contact.phone %></p>
+              </li>
+
+            </ul>
+          </li>
+        </a>
+        <% }); %>
+
+      </ul>
+    </div>
+  </body>
+</html>

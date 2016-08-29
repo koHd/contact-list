@@ -1,0 +1,23 @@
+<div class="large-contact" id=<%= contact._id %>>
+
+  <img src=<%= contact.picture["large"] %> alt="contact picture"></img>
+
+  <ul>
+    <li id="name" class="contact-detail">
+      <img src="/assets/icons/star_fav_empty.png" alt="name" class="small-icon"></img>
+      <p><%- contact.name["first"] %> <%- contact.name["last"] %></p>
+    </li>
+
+    <li id="email" class="contact-detail">
+      <img src="/assets/icons/mail.png" alt="email address" class="small-icon"></img>
+      <p><%= contact.email %></p>
+    </li>
+
+    <li id="phone" class="contact-detail">
+      <img src="/assets/icons/phone.png" alt="phone number" class="small-icon"></img>
+      <p><%= contact.phone %></p>
+    </li>
+
+  </ul>
+
+</div>

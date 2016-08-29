@@ -1,7 +1,6 @@
 var express = require('express');
 var bodyParser = require('body-parser');
-var testController = require('./controllers/test.js');
-
+var contactsController = require('./controllers/contacts');
 
 var app = express();
 
@@ -12,9 +11,13 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 // routing
 app.get('/', function (req, res) {
-  res.render('test');
+  res.send("Hello World!");
 });
+
+app.use('/contacts', contactsController);
 
 app.listen(8001, function() {
   console.log("App is listening on port 8001");
 });
+
+module.exports = app;
