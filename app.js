@@ -11,7 +11,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 // routing
 app.get('/', function (req, res) {
-  res.send("Hello World!");
+  res.redirect('/contacts');
 });
 
 app.use('/contacts', contactsController);
