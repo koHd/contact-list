@@ -3,7 +3,8 @@ var router = express.Router();
 var http = require('http');
 
 router.get('/', function(req, res) {
-  req.session.reset();
+  console.log("Ending session for user " + req.session.user.username);
+  req.session.destroy();
   res.redirect('/');
 })
 
